@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Women's Premier League</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url("https://images.unsplash.com/photo-1508098682722-e99c643e7f0b");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.85);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1593766827228-8737b4534aa6");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:65px;
+color:#ffd700;
+animation:fadeUp 2s ease;
+}
+
+.hero p{
+font-size:22px;
+margin-top:20px;
+animation:fadeUp 3s ease;
+}
+
+.buttons{
+margin-top:35px;
+animation:fadeUp 4s ease;
+}
+
+.buttons a{
+text-decoration:none;
+padding:14px 30px;
+margin:10px;
+border-radius:30px;
+font-weight:bold;
+transition:0.4s;
+}
+
+.btn1{
+background:#ff512f;
+color:white;
+}
+
+.btn1:hover{
+background:#dd2476;
+}
+
+.btn2{
+background:#00c6ff;
+color:white;
+}
+
+.btn2:hover{
+background:#0072ff;
+}
+
+/* TEAMS SCROLLING SECTION */
+
+.logos{
+background:rgba(0,0,0,0.85);
+padding:40px 0;
+overflow:hidden;
+}
+
+.logos h2{
+text-align:center;
+color:#ffd700;
+margin-bottom:30px;
+}
+
+.logo-track{
+display:flex;
+gap:60px;
+animation:scroll 20s linear infinite;
+}
+
+.logo-track img{
+height:70px;
+}
+
+/* ABOUT SECTION */
+
+.about{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#141e30,#243b55);
+}
+
+.about h2{
+color:#ffd700;
+font-size:35px;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes scroll{
+from{transform:translateX(0);}
+to{transform:translateX(-100%);}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="teams.html">Teams</a>
+<a href="champions.html">Champions</a>
+<a href="owners.html">Owners</a>
+</nav>
+
+<div class="hero">
+<h1>🏆 Women's Premier League</h1>
+<p>Where Champions Rise & Legends Are Born</p>
+
+<div class="buttons">
+<a href="teams.html" class="btn1">Explore Teams</a>
+<a href="champions.html" class="btn2">View Champions</a>
+</div>
+</div>
+
+<div class="logos">
+<h2>🏏 Participating Teams</h2>
+<div class="logo-track">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/500px-Mumbai_Indians_Logo.svg.png">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Delhi_Capitals.svg/500px-Delhi_Capitals.svg.png">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Royal_Challengers_Bengaluru_Logo.svg/330px-Royal_Challengers_Bengaluru_Logo.svg.png">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/a0/UP_Warriors%28z%29_WPL_logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Gujarat_Giants_WPL_logo.svg/500px-Gujarat_Giants_WPL_logo.svg.png">
+</div>
+</div>
+
+<div class="about">
+<h2>About WPL</h2>
+<p>
+The Women's Premier League (WPL) is India's premier women's T20 cricket competition,
+featuring top international stars and India's finest talents.
+With thrilling finals, iconic captains, and historic performances,
+WPL continues to redefine women's cricket excellence.
+</p>
+</div>
+
+</body>
+</html>
